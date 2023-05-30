@@ -24,3 +24,6 @@ make
 ```
 结果如下:   
 ![](image/init.png)
+
+## Vulkan
+[检查VUlkan初始化 ](https://github.com/kabosusang/VulkanFrame/tree/VulkanInit)  
