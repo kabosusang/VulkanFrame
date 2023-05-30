@@ -25,5 +25,8 @@ make
 结果如下:   
 ![](image/init.png)
 
-## Vulkan
+---
+## Vulkan Branch
 [检查VUlkan初始化 ](https://github.com/kabosusang/VulkanFrame/tree/VulkanInit)  
+复制代码 修改`src`目录
+![](image/VulkanInit.png)
