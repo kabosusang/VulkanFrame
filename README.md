@@ -23,4 +23,4 @@ make
 ..\bin\app.exe
 ```
 结果如下:   
-![](image/init.png)
+![](image/Imgui.png)
