@@ -18,11 +18,6 @@ include_directories(${PROJECT_SOURCE_DIR}/vendor/tinyobjloader)
 include_directories(${PROJECT_SOURCE_DIR}/vendor/imgui)
 include_directories(${PROJECT_SOURCE_DIR}/src/Imgui)
 
-
-#Vulkan
-include_directories(D:/Vulkan1.3.246.1/Include)
-
-
 #add subdirectory
 add_subdirectory(vendor/glfw)
 add_subdirectory(vendor/imgui)
@@ -31,8 +26,13 @@ add_subdirectory(vendor/imgui)
 # 包含静态库路径
 link_directories(${PROJECT_SOURCE_DIR}/vendor/glfw/build/src)
 
-#Vulkan lib
-link_directories(D:/Vulkan1.3.246.1/Lib)
+#Vulkan
+set(VULKAN_PATH $ENV{VULKAN_SDK})
+
+message("VULKAN_SDK: ${VULKAN_PATH}")
+include_directories(${VULKAN_PATH}/Include)
+link_directories(${VULKAN_PATH}/Lib)
+
 # glfw
 link_libraries(glfw3)
 link_libraries(vulkan-1)
